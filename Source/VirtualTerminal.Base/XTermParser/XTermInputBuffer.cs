@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace VtNetCore.XTermParser;
+
 public class XTermInputBuffer
 {
-    public byte [] Buffer { get; private set; }
+    public byte[] Buffer { get; private set; }
 
     private class StreamState
     {
@@ -29,7 +30,7 @@ public class XTermInputBuffer
 
     public EMode Mode { get; set; } = EMode.UTF8;
 
-    public byte [] Stacked
+    public byte[] Stacked
     {
         get
         {
@@ -38,7 +39,7 @@ public class XTermInputBuffer
         }
     }
 
-    public void Add(byte [] data)
+    public void Add(byte[] data)
     {
         if (Buffer == null)
             Buffer = data;
@@ -135,9 +136,9 @@ public class XTermInputBuffer
         return Buffer[Position + skip];
     }
 
-    public char Read(bool utf8=false)
+    public char Read(bool utf8 = false)
     {
-        if(utf8)
+        if (utf8)
             return ReadUtf8();
         return ReadRaw();
     }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace VtNetCore.XTermParser.SequenceType;
+
 public class TerminalSequence
 {
     public List<int> Parameters { get; set; }
