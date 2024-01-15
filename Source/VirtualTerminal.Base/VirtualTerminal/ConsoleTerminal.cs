@@ -381,7 +381,7 @@ public class ConsoleTerminal : IVirtualTerminalController
         //Console.;
     }
 
-    public void XTermReport(XTermReportType reportType) { }
+    public void XTermReport(EXTermReportType reportType) { }
 
     public void XTermResizeTextArea(int columns, int rows) { }
 

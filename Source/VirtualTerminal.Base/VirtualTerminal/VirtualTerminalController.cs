@@ -3427,35 +3427,35 @@ public class VirtualTerminalController : IVirtualTerminalController
         LogController($"(Not implemented) Raise xterm window to front of the stacking order");
     }
 
-    public void XTermReport(XTermReportType reportType)
+    public void XTermReport(EXTermReportType reportType)
     {
         switch(reportType)
         {
-            case XTermReportType.WindowState:
+            case EXTermReportType.WindowState:
                 LogController($"(Not implemented) Report xterm window state.");
                 break;
-            case XTermReportType.WindowPosition:
+            case EXTermReportType.WindowPosition:
                 LogController($"(Not implemented) Report xterm window position????");
                 break;
-            case XTermReportType.TextAreaPixelSize:
+            case EXTermReportType.TextAreaPixelSize:
                 LogController($"(Not implemented) Report xterm text area size in pixels????");
                 break;
-            case XTermReportType.ScreenPixelSize:
+            case EXTermReportType.ScreenPixelSize:
                 LogController($"(Not implemented) Report size of the screen in pixels.");
                 break;
-            case XTermReportType.CharacterPixelSize:
+            case EXTermReportType.CharacterPixelSize:
                 LogController($"(Not implemented) Report xterm character size in pixels.");
                 break;
-            case XTermReportType.TextAreaCharSize:
+            case EXTermReportType.TextAreaCharSize:
                 LogController($"(Not implemented) Report the size of the text area in characters.");
                 break;
-            case XTermReportType.ScreenCharSize:
+            case EXTermReportType.ScreenCharSize:
                 LogController($"(Not implemented) Report the size of the screen in characters.");
                 break;
-            case XTermReportType.WindowIconLabel:
+            case EXTermReportType.WindowIconLabel:
                 LogController($"(Not implemented) Report xterm window's icon label.");
                 break;
-            case XTermReportType.WindowTitle:
+            case EXTermReportType.WindowTitle:
                 LogController($"(Not implemented) Report xterm window's title.");
                 break;
             default:

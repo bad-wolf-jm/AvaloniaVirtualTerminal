@@ -153,7 +153,7 @@ public interface IVirtualTerminalController
     void XTermMoveWindow(int x, int y);
     void XTermRaiseToFront();
     void XTermRefreshWindow();
-    void XTermReport(XTermReportType reportType);
+    void XTermReport(EXTermReportType reportType);
     void XTermResizeTextArea(int columns, int rows);
     void XTermResizeWindow(int width, int height);
 }
