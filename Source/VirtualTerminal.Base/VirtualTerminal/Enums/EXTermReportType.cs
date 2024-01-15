@@ -1,6 +1,6 @@
 ﻿namespace VtNetCore.VirtualTerminal.Enums;
 
-public enum XTermReportType
+public enum EXTermReportType
 {
     WindowState = 11,
     WindowPosition = 13,

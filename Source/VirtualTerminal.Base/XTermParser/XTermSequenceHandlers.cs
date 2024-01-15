@@ -1111,7 +1111,7 @@ public static class XTermSequenceHandlers
                     case 19:
                     case 20:
                     case 21:
-                        controller.XTermReport((XTermReportType)sequence.Parameters[0]);
+                        controller.XTermReport((EXTermReportType)sequence.Parameters[0]);
                         break;
                     case 22:
                         if(sequence.Parameters.Count >= 2)
